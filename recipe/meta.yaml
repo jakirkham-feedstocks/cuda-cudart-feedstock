@@ -107,9 +107,7 @@ outputs:
       run_exports:
         - {{ pin_subpackage("cuda-cudart", max_pin="x") }}
     files:
-      - targets/{{ target_name }}/include/*                             # [linux]
-      - targets/{{ target_name }}/include/cooperative_groups/*          # [linux]
-      - targets/{{ target_name }}/include/cooperative_groups/details/*  # [linux]
+      - targets/{{ target_name }}/include                               # [linux]
       - targets/{{ target_name }}/lib/*.so                              # [linux]
       - Library\include                                                 # [win]
       - Library\lib\cuda.lib                                            # [win]
