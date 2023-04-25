@@ -24,7 +24,7 @@ source:
   sha256: 1cd8516feee068c6d718453e76b0dfcbee27844a35d4f3aa608a3d316190309c  # [win]
 
 build:
-  number: 0
+  number: 1
   skip: true  # [osx or win]
 
 test:
@@ -107,13 +107,14 @@ outputs:
       run_exports:
         - {{ pin_subpackage("cuda-cudart", max_pin="x") }}
     files:
-      - targets/{{ target_name }}/include/*                     # [linux]
-      - targets/{{ target_name }}/include/cooperative_groups/*  # [linux]
-      - targets/{{ target_name }}/lib/*.so                      # [linux]
-      - Library\include                                         # [win]
-      - Library\lib\cuda.lib                                    # [win]
-      - Library\lib\cudadevrt.lib                               # [win]
-      - Library\lib\cudart.lib                                  # [win]
+      - targets/{{ target_name }}/include/*                             # [linux]
+      - targets/{{ target_name }}/include/cooperative_groups/*          # [linux]
+      - targets/{{ target_name }}/include/cooperative_groups/details/*  # [linux]
+      - targets/{{ target_name }}/lib/*.so                              # [linux]
+      - Library\include                                                 # [win]
+      - Library\lib\cuda.lib                                            # [win]
+      - Library\lib\cudadevrt.lib                                       # [win]
+      - Library\lib\cudart.lib                                          # [win]
     requirements:
       build:
         - {{ compiler("c") }}
