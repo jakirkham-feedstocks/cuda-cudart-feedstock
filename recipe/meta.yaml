@@ -319,5 +319,6 @@ about:
   doc_url: https://docs.nvidia.com/cuda/index.html
 
 extra:
+  feedstock-name: cuda-cudart
   recipe-maintainers:
     - adibbley
