@@ -24,11 +24,13 @@ source:
   sha256: 1cd8516feee068c6d718453e76b0dfcbee27844a35d4f3aa608a3d316190309c  # [win]
 
 build:
-  number: 2
+  number: 3
   skip: true  # [osx or win]
 
 outputs:
   - name: cuda-cudart_{{ target_platform }}
+    build:
+      noarch: generic
     files:
       - targets/{{ target_name }}/lib/libcu*.so.*  # [linux]
       - Library\bin\cudart*.dll                    # [win]
