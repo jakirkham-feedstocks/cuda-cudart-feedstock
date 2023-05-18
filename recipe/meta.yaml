@@ -157,6 +157,7 @@ outputs:
         - {{ pin_compatible("cuda-version", max_pin="x.x") }}
         - cuda-cudart-static_{{ target_platform }}
         - cuda-cccl_{{ target_platform }}
+        - cuda-cudart_{{ target_platform }}
       run_constrained:
         - arm-variant * {{ arm_variant_type }}  # [aarch64]
     test:
