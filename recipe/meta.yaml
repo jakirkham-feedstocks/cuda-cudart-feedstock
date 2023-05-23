@@ -31,6 +31,7 @@ outputs:
   - name: cuda-cudart_{{ target_platform }}
     build:
       noarch: generic
+      binary_relocation: false
     files:
       - targets/{{ target_name }}/lib/libcu*.so.*  # [linux]
       - Library\bin\cudart*.dll                    # [win]
