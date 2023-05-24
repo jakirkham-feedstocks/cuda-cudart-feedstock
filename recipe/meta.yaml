@@ -285,6 +285,7 @@ outputs:
     build:
       skip: True  # [not linux]
       noarch: generic
+      binary_relocation: false
     files:
       - targets/{{ target_name }}/lib/stubs/libcuda.so
     requirements:
