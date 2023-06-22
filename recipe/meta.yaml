@@ -24,7 +24,7 @@ source:
   sha256: 1cd8516feee068c6d718453e76b0dfcbee27844a35d4f3aa608a3d316190309c  # [win]
 
 build:
-  number: 5
+  number: 6
   skip: true  # [osx or win]
 
 outputs:
@@ -92,9 +92,9 @@ outputs:
       license_file: LICENSE
       license: LicenseRef-NVIDIA-End-User-License-Agreement
       license_url: https://docs.nvidia.com/cuda/eula/index.html
-      summary: CUDA Runtime native Libraries
+      summary: CUDA Runtime Native Libraries
       description: |
-        CUDA Runtime native Libraries
+        CUDA Runtime Native Libraries
       doc_url: https://docs.nvidia.com/cuda/index.html
 
   - name: cuda-cudart-dev
@@ -129,9 +129,9 @@ outputs:
       license_file: LICENSE
       license: LicenseRef-NVIDIA-End-User-License-Agreement
       license_url: https://docs.nvidia.com/cuda/eula/index.html
-      summary: CUDA Runtime native Libraries
+      summary: CUDA Runtime Native Libraries
       description: |
-        CUDA Runtime native Libraries
+        CUDA Runtime Native Libraries
       doc_url: https://docs.nvidia.com/cuda/index.html
 
   - name: cuda-cudart-dev_{{ target_platform }}
@@ -180,9 +180,9 @@ outputs:
       license_file: LICENSE
       license: LicenseRef-NVIDIA-End-User-License-Agreement
       license_url: https://docs.nvidia.com/cuda/eula/index.html
-      summary: CUDA Runtime native Libraries
+      summary: CUDA Runtime Native Libraries
       description: |
-        CUDA Runtime native Libraries
+        CUDA Runtime Native Libraries
       doc_url: https://docs.nvidia.com/cuda/index.html
 
   - name: cuda-cudart-static
@@ -211,9 +211,9 @@ outputs:
       license_file: LICENSE
       license: LicenseRef-NVIDIA-End-User-License-Agreement
       license_url: https://docs.nvidia.com/cuda/eula/index.html
-      summary: CUDA Runtime native Libraries
+      summary: CUDA Runtime Native Libraries
       description: |
-        CUDA Runtime native Libraries
+        CUDA Runtime Native Libraries
       doc_url: https://docs.nvidia.com/cuda/index.html
 
   - name: cuda-cudart-static_{{ target_platform }}
@@ -245,9 +245,9 @@ outputs:
       license_file: LICENSE
       license: LicenseRef-NVIDIA-End-User-License-Agreement
       license_url: https://docs.nvidia.com/cuda/eula/index.html
-      summary: CUDA Runtime native Libraries
+      summary: CUDA Runtime Native Libraries
       description: |
-        CUDA Runtime native Libraries
+        CUDA Runtime Native Libraries
       doc_url: https://docs.nvidia.com/cuda/index.html
 
   - name: cuda-driver-dev
@@ -276,9 +276,9 @@ outputs:
       license_file: LICENSE
       license: LicenseRef-NVIDIA-End-User-License-Agreement
       license_url: https://docs.nvidia.com/cuda/eula/index.html
-      summary: CUDA Runtime native Libraries
+      summary: CUDA Runtime Native Libraries
       description: |
-        CUDA Runtime native Libraries
+        CUDA Runtime Native Libraries
       doc_url: https://docs.nvidia.com/cuda/index.html
 
   - name: cuda-driver-dev_{{ target_platform }}
@@ -308,9 +308,9 @@ outputs:
       license_file: LICENSE
       license: LicenseRef-NVIDIA-End-User-License-Agreement
       license_url: https://docs.nvidia.com/cuda/eula/index.html
-      summary: CUDA Runtime native Libraries
+      summary: CUDA Runtime Native Libraries
       description: |
-        CUDA Runtime native Libraries
+        CUDA Runtime Native Libraries
       doc_url: https://docs.nvidia.com/cuda/index.html
 
 about:
@@ -318,9 +318,9 @@ about:
   license_file: LICENSE
   license: LicenseRef-NVIDIA-End-User-License-Agreement
   license_url: https://docs.nvidia.com/cuda/eula/index.html
-  summary: CUDA Runtime native Libraries
+  summary: CUDA Runtime Native Libraries
   description: |
-    CUDA Runtime native Libraries
+    CUDA Runtime Native Libraries
   doc_url: https://docs.nvidia.com/cuda/index.html
 
 extra:
