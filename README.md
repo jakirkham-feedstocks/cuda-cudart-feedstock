@@ -10,11 +10,11 @@ Home: https://developer.nvidia.com/cuda-toolkit
 
 Package license: [LicenseRef-NVIDIA-End-User-License-Agreement](https://docs.nvidia.com/cuda/eula/index.html)
 
-Summary: CUDA Runtime native Libraries
+Summary: CUDA Runtime Native Libraries
 
 Documentation: https://docs.nvidia.com/cuda/index.html
 
-CUDA Runtime native Libraries
+CUDA Runtime Native Libraries
 
 About cuda-cudart_linux-64
 --------------------------
