@@ -3,22 +3,45 @@ About cuda-cudart-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cuda-cudart-feedstock/blob/main/LICENSE.txt)
 
+About cuda-cudart
+-----------------
+
 Home: https://developer.nvidia.com/cuda-toolkit
 
 Package license: [LicenseRef-NVIDIA-End-User-License-Agreement](https://docs.nvidia.com/cuda/eula/index.html)
 
-Summary: CUDA Runtime native Libraries
+Summary: CUDA Runtime Native Libraries
 
 Documentation: https://docs.nvidia.com/cuda/index.html
 
-CUDA Runtime native Libraries
+CUDA Runtime Native Libraries
+
+About cuda-cudart_linux-64
+--------------------------
+
+Home: https://developer.nvidia.com/cuda-toolkit
+
+Package license: [LicenseRef-NVIDIA-End-User-License-Agreement](https://docs.nvidia.com/cuda/eula/index.html)
+
+Summary: CUDA Runtime architecture dependent libraries
+
+Documentation: https://docs.nvidia.com/cuda/index.html
+
+CUDA Runtime architecture dependent libraries
 
 
 Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>Travis</td>
+    <td>
+      <a href="https://app.travis-ci.com/conda-forge/cuda-cudart-feedstock">
+        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/cuda-cudart-feedstock/main.svg?label=Linux">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
@@ -39,10 +62,17 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>win_64</td>
+              <td>linux_aarch64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=19152&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cuda-cudart-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cuda-cudart-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=19152&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cuda-cudart-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_" alt="variant">
                 </a>
               </td>
             </tr>
@@ -63,6 +93,7 @@ Current release info
 | [![Conda Recipe](https://img.shields.io/badge/recipe-cuda--cudart--dev_linux--64-green.svg)](https://anaconda.org/conda-forge/cuda-cudart-dev_linux-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cuda-cudart-dev_linux-64.svg)](https://anaconda.org/conda-forge/cuda-cudart-dev_linux-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cuda-cudart-dev_linux-64.svg)](https://anaconda.org/conda-forge/cuda-cudart-dev_linux-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cuda-cudart-dev_linux-64.svg)](https://anaconda.org/conda-forge/cuda-cudart-dev_linux-64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-cuda--cudart--static-green.svg)](https://anaconda.org/conda-forge/cuda-cudart-static) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cuda-cudart-static.svg)](https://anaconda.org/conda-forge/cuda-cudart-static) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cuda-cudart-static.svg)](https://anaconda.org/conda-forge/cuda-cudart-static) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cuda-cudart-static.svg)](https://anaconda.org/conda-forge/cuda-cudart-static) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-cuda--cudart--static_linux--64-green.svg)](https://anaconda.org/conda-forge/cuda-cudart-static_linux-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cuda-cudart-static_linux-64.svg)](https://anaconda.org/conda-forge/cuda-cudart-static_linux-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cuda-cudart-static_linux-64.svg)](https://anaconda.org/conda-forge/cuda-cudart-static_linux-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cuda-cudart-static_linux-64.svg)](https://anaconda.org/conda-forge/cuda-cudart-static_linux-64) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cuda--cudart_linux--64-green.svg)](https://anaconda.org/conda-forge/cuda-cudart_linux-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cuda-cudart_linux-64.svg)](https://anaconda.org/conda-forge/cuda-cudart_linux-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cuda-cudart_linux-64.svg)](https://anaconda.org/conda-forge/cuda-cudart_linux-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cuda-cudart_linux-64.svg)](https://anaconda.org/conda-forge/cuda-cudart_linux-64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-cuda--driver--dev-green.svg)](https://anaconda.org/conda-forge/cuda-driver-dev) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cuda-driver-dev.svg)](https://anaconda.org/conda-forge/cuda-driver-dev) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cuda-driver-dev.svg)](https://anaconda.org/conda-forge/cuda-driver-dev) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cuda-driver-dev.svg)](https://anaconda.org/conda-forge/cuda-driver-dev) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-cuda--driver--dev_linux--64-green.svg)](https://anaconda.org/conda-forge/cuda-driver-dev_linux-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cuda-driver-dev_linux-64.svg)](https://anaconda.org/conda-forge/cuda-driver-dev_linux-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cuda-driver-dev_linux-64.svg)](https://anaconda.org/conda-forge/cuda-driver-dev_linux-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cuda-driver-dev_linux-64.svg)](https://anaconda.org/conda-forge/cuda-driver-dev_linux-64) |
 
@@ -76,16 +107,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `cuda-cudart, cuda-cudart-dev, cuda-cudart-dev_linux-64, cuda-cudart-static, cuda-cudart-static_linux-64, cuda-driver-dev, cuda-driver-dev_linux-64` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `cuda-cudart, cuda-cudart-dev, cuda-cudart-dev_linux-64, cuda-cudart-static, cuda-cudart-static_linux-64, cuda-cudart_linux-64, cuda-driver-dev, cuda-driver-dev_linux-64` can be installed with `conda`:
 
 ```
-conda install cuda-cudart cuda-cudart-dev cuda-cudart-dev_linux-64 cuda-cudart-static cuda-cudart-static_linux-64 cuda-driver-dev cuda-driver-dev_linux-64
+conda install cuda-cudart cuda-cudart-dev cuda-cudart-dev_linux-64 cuda-cudart-static cuda-cudart-static_linux-64 cuda-cudart_linux-64 cuda-driver-dev cuda-driver-dev_linux-64
 ```
 
 or with `mamba`:
 
 ```
-mamba install cuda-cudart cuda-cudart-dev cuda-cudart-dev_linux-64 cuda-cudart-static cuda-cudart-static_linux-64 cuda-driver-dev cuda-driver-dev_linux-64
+mamba install cuda-cudart cuda-cudart-dev cuda-cudart-dev_linux-64 cuda-cudart-static cuda-cudart-static_linux-64 cuda-cudart_linux-64 cuda-driver-dev cuda-driver-dev_linux-64
 ```
 
 It is possible to list all of the versions of `cuda-cudart` available on your platform with `conda`:
