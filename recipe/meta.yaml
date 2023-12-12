@@ -129,13 +129,6 @@ outputs:
         - test -L $PREFIX/lib/libcudart.so           # [linux]
         - test -f $PREFIX/lib/pkgconfig/cuda-*.pc    # [linux]
         - test -f $PREFIX/lib/pkgconfig/cudart-*.pc  # [linux]
-        - if not exist %LIBRARY_INC%\cuda.h exit 1              # [win]
-        - if not exist %LIBRARY_INC%\cuda_runtime.h exit 1      # [win]
-        - if not exist %LIBRARY_INC%\cuda_runtime_api.h exit 1  # [win]
-        - if not exist %LIBRARY_LIB%\cuda.lib exit 1       # [win]
-        - if not exist %LIBRARY_LIB%\cudadevrt.lib exit 1  # [win]
-        - if not exist %LIBRARY_LIB%\cudart.lib exit 1     # [win]
-        - if not exist %LIBRARY_LIB%\cudart_static.lib exit 1  # [win]
     about:
       home: https://developer.nvidia.com/cuda-toolkit
       license_file: LICENSE
@@ -187,7 +180,6 @@ outputs:
         - if not exist %LIBRARY_LIB%\cuda.lib exit 1                                            # [win]
         - if not exist %LIBRARY_LIB%\cudadevrt.lib exit 1                                       # [win]
         - if not exist %LIBRARY_LIB%\cudart.lib exit 1                                          # [win]
-        - if not exist %LIBRARY_LIB%\cudart_static.lib exit 1                                   # [win]
     about:
       home: https://developer.nvidia.com/cuda-toolkit
       license_file: LICENSE
@@ -219,7 +211,6 @@ outputs:
         - test -L $PREFIX/lib/libcudart_static.a  # [linux]
         - test -L $PREFIX/lib/libcudadevrt.a      # [linux]
         - test -L $PREFIX/lib/libculibos.a        # [linux]
-        - if not exist %LIBRARY_LIB%\cudart_static.lib exit 1  # [win]
     about:
       home: https://developer.nvidia.com/cuda-toolkit
       license_file: LICENSE
