@@ -66,8 +66,8 @@ outputs:
     build:
       binary_relocation: false
       missing_dso_whitelist:                           # [win]
-      - "*/api-ms-win-core-libraryloader-*.dll"        # [win]
-      - "*/api-ms-win-security-systemfunctions-*.dll"  # [win]
+        - "*/api-ms-win-core-libraryloader-*.dll"        # [win]
+        - "*/api-ms-win-security-systemfunctions-*.dll"  # [win]
     files:
       - lib/libcu*.so.*                            # [linux]
       - Library\bin\cudart*.dll                    # [win]
