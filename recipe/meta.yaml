@@ -1,6 +1,6 @@
 {% set name = "cuda-cudart" %}
-{% set version = "12.0.107" %}
-{% set cuda_version = "12.0" %}
+{% set version = "12.1.105" %}
+{% set cuda_version = "12.1" %}
 {% set platform = "linux-x86_64" %}  # [linux64]
 {% set platform = "linux-ppc64le" %}  # [ppc64le]
 {% set platform = "linux-sbsa" %}  # [aarch64]
@@ -18,13 +18,13 @@ package:
 
 source:
   url: https://developer.download.nvidia.com/compute/cuda/redist/cuda_cudart/{{ platform }}/cuda_cudart-{{ platform }}-{{ version }}-archive.{{ extension }}
-  sha256: c0e16e9593a69afe4997ae96a8b024e751ebce0254523fd969b08bb028582d23  # [linux64]
-  sha256: d785fd613e35e3761fdb0016a31a56417f570605cbfb9a93ca9dc68be6789188  # [ppc64le]
-  sha256: 5de248c6c203f6c91ce34256bbfc028bc87c1b0c552f9f51edb65e60ad665f63  # [aarch64]
-  sha256: 1cd8516feee068c6d718453e76b0dfcbee27844a35d4f3aa608a3d316190309c  # [win]
+  sha256: 6096ec878c8c443258d39c6e9cf2decef127f8aa8da594fdc5a336d047ab6bd9  # [linux64]
+  sha256: 5e50478b7b1e4ffde463d2dafb33df8e52748d469257ae53fffc66249ac9d8b9  # [ppc64le]
+  sha256: 4a08376f30c2b3c4274fbd40e546738b59c046beb9766c1d76c5f4d192d2aa2c  # [aarch64]
+  sha256: 99b884fc761a4c8592f819a170947db2dff2cd26fafc350bd4dd3c2b4b9aaf19  # [win]
 
 build:
-  number: 8
+  number: 0
   skip: true  # [osx]
 
 outputs:
@@ -338,4 +338,4 @@ about:
 extra:
   feedstock-name: cuda-cudart
   recipe-maintainers:
-    - adibbley
+    - conda-forge/cuda
