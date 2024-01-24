@@ -1,6 +1,6 @@
 {% set name = "cuda-cudart" %}
-{% set version = "12.2.140" %}
-{% set cuda_version = "12.2" %}
+{% set version = "12.3.101" %}
+{% set cuda_version = "12.3" %}
 {% set platform = "linux-x86_64" %}  # [linux64]
 {% set platform = "linux-ppc64le" %}  # [ppc64le]
 {% set platform = "linux-sbsa" %}  # [aarch64]
@@ -18,10 +18,10 @@ package:
 
 source:
   url: https://developer.download.nvidia.com/compute/cuda/redist/cuda_cudart/{{ platform }}/cuda_cudart-{{ platform }}-{{ version }}-archive.{{ extension }}
-  sha256: baebd331249bca0edf36776ead90e6b2024ffee01ea26cd9dd07344bebeaff08  # [linux64]
-  sha256: aa4c0ae347e137f7b373f954b4bf180b5d43d5279afcfa34d6ab8621b8530622  # [ppc64le]
-  sha256: 11c263e07a0d0cef82d754b0beea3db191654b4f18b74b7ea40777244e6c8246  # [aarch64]
-  sha256: c63a17cd542a47aa6734263586e3dab6f1e127779099af92d9d01f220f80d750  # [win]
+  sha256: e37d478d1e7a10490d55fb87a5ef379a18c648f3010e1d3687c4298ddc3e9e19  # [linux64]
+  sha256: 23f6ef558bb954dea3ef5b378c3ad28e1da93080890bd8bf1a18a75ae2ee605d  # [ppc64le]
+  sha256: 131e62c60ba979f6870687db99a7537482f6df445915789d2a4799dc4e898b66  # [aarch64]
+  sha256: 310a71bc9c92d6e61eeddf3489cc195519665fbfaca16c618b03da0ac5ea9f7d  # [win]
 
 build:
   number: 0
